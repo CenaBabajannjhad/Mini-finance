@@ -4,7 +4,10 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.main-column > div{
+  margin-bottom: 20px;
+  /* border: 1px solid #000; */
+}
 .exchange-rate {
   background: #a8dadc;
   border-radius: 10px;
