@@ -113,7 +113,125 @@
   margin-bottom: 5px;
   margin-top: 5px;
 }
-<<<<<<< HEAD
+
+.recentTransationBox {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  height: auto;
+}
+
+.recentTransationBox h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: var(--heading-color);
+  margin: 1.5rem;
+}
+.contentTransation {
+  display: flex;
+  width: 100%;
+  margin: 1rem auto;
+}
+.leftTransationBox {
+  width: 20%;
+}
+.leftTransationBox img {
+  float: left;
+  height: 100%;
+  width: 100%;
+  border-radius: 5rem;
+  padding: 1rem;
+}
+.rightTransationBox {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+}
+.rightTransationBox span {
+  padding: 5px;
+  font-size: 2.5rem;
+  text-align: left;
+  align-items: center;
+}
+.contentTransation:last-child {
+  border-bottom: 1px solid gray;
+}
+.text-color {
+  color: var(--p-color);
+}
+
+.dark-color {
+  color: var(--dark-color);
+}
+.alarm-color {
+  color: var(--primary-bg-color);
+  font-weight: bolder;
+}
+.green-color {
+  color: green;
+  font-weight: bolder;
+}
+.hr1 {
+  background-color: var(--p-color);
+  border: 1px solid var(--p-color);
+  width: 90%;
+  margin: 5px;
+  height: 0.5px;
+}
+.btnRecent {
+  background-color: var(--custom-btn-bg-color);
+  border-radius: 10px;
+  width: 70%;
+  display: block;
+  color: white;
+  font-weight: bolder;
+  padding: 5px;
+}
+.circle {
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--custom-btn-bg-color);
+  border-radius: 50%;
+}
+.btnRecent:hover {
+  color: var(--custom-btn-bg-hover-color);
+}
+@media (max-width: 480px) {
+  .leftTransationBox {
+    width: 15%;
+  }
+  .leftTransationBox img {
+    height: 50%;
+    width: 50%;
+  }
+
+  .rightTransationBox span,
+  .btnRecent {
+    font-size: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .rightTransationBox span,
+  .btnRecent {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .rightTransationBox span,
+  .btnRecent {
+    font-size: 2rem;
+  }
+}
+
 /* section > Your Balance  */
 .card-Balance {
   width: 100%;
@@ -189,128 +307,3 @@
   display: flex;
   justify-content: space-between;
 }
-=======
-
-
-
- 
-.recentTransationBox{
-  background-color:var(--secondary-color);
- display:flex;
- flex-direction:column;
-  text-align:center;
-  align-items:center;
-  padding:1rem;
-  height:auto;
-}
-
-.recentTransationBox h2{
- font-size: 3rem;
-   font-weight: bolder;
-   color: var(--heading-color);
- margin:1.5rem;
-}
-.contentTransation{
- display:flex;
- width:100%;
- margin:1rem auto;
-   
-}
-.leftTransationBox{
-  width: 20%;
-}
-.leftTransationBox img {
- float: left;
-   height: 100%;
-  width:100%;
-   border-radius: 5rem;
- padding:1rem;
-}
-.rightTransationBox{
- display: grid;
- width:80%;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-   grid-gap: 1rem;
- text-align:center;
- align-items:center;
- padding:1rem;
- 
-}
-.rightTransationBox span{
- padding:5px;
- font-size:2.5rem;
- text-align:left;
- align-items:center;
- 
-}
-.contentTransation:last-child{
-border-bottom: 1px solid gray;
-}
-.text-color{
- color:var(--p-color);
-}
-
-.dark-color{
- color:var(--dark-color);
-}
-.alarm-color{
- color:var(--primary-bg-color);
- font-weight:bolder;
-}
-.green-color{
- color: green;
- font-weight:bolder;
-}
-.hr1{
- background-color:var(--p-color);
- border:1px solid    var( --p-color);
- width:90%;
- margin:5px;
- height:0.5px;
-}
-.btnRecent{
- background-color:var(--custom-btn-bg-color);
- border-radius:10px;
- width:70%;
- display:block;
- color:white;
- font-weight:bolder;
- padding:5px;
-}
-.circle{
- height:2rem;
- width:2rem;
- background-color:var(--custom-btn-bg-color);
- border-radius:50%;
-}
-.btnRecent:hover{
- color:var(--custom-btn-bg-hover-color);
-}
-@media (max-width:480px){
- .leftTransationBox{
-  width: 15%;
-}
- .leftTransationBox img {
-   height: 50%;
-  width:50%;
-}
-
-.rightTransationBox span,.btnRecent{
- font-size:0.5rem;
-}
-}
-@media (min-width: 768px) {
- .rightTransationBox span,.btnRecent{
- font-size:2.5rem;
- 
-} 
-}
-
-@media (max-width: 992px) {
-  .rightTransationBox span,.btnRecent{
- font-size:2rem;
- 
-}
-}
->>>>>>> 14ee2e199bed3ee69f33fa7dec8fcdbd8bff5d56
