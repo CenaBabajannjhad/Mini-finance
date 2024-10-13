@@ -148,7 +148,7 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding: 15px 3px; 
+  padding: 15px 3px;
   overflow: hidden;
   border-radius: 1rem;
 }
@@ -157,7 +157,7 @@
   font-size: 3rem;
   font-weight: bolder;
   color: var(--heading-color);
-  margin: 1.5rem; 
+  margin: 1.5rem;
 }
 .contentTransation {
   display: flex;
@@ -263,23 +263,21 @@
 }
 
 @media screen and (min-width: 992px) {
-
-  .rightTransationBox span,
-  .btnRecent {
-    font-size: 0.7rem;
-  }  
-}
-@media screen and (max-width: 992px) {
-
   .rightTransationBox span,
   .btnRecent {
     font-size: 0.7rem;
   }
-  .leftTransationBox img{
+}
+@media screen and (max-width: 992px) {
+  .rightTransationBox span,
+  .btnRecent {
+    font-size: 0.7rem;
+  }
+  .leftTransationBox img {
     width: 80%;
     padding: 1rem;
-  } 
-} 
+  }
+}
 @media screen and (max-width: 768px) {
   .rightTransationBox span,
   .btnRecent {
@@ -362,6 +360,35 @@
   justify-content: space-between;
 }
 /*shayan*/
+.src-content-container {
+  width: 100%;
+  height: 220px;
+  background-color: #a8dadc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+.src-content-box {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #737d8e;
+  align-items: center;
+}
+.src-content-box > div:nth-child(1) > img {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+}
+.src-content-box > div:nth-child(2) {
+  font-size: 20px;
+  font-weight: 900;
+}
 .send-money-container {
   background-color: #ff4e4e;
   width: 100%;
