@@ -473,3 +473,74 @@
   justify-content: center;
   border-radius: 20px;
 }
+.history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.chart {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 20px;
+}
+.history-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.chart_body {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #007bff 0% 16.7%,
+    #28a745 16.7% 71.8%,
+    #ffc107 71.8% 100%
+  );
+}
+.percentage {
+  position: absolute;
+  font-size: 14px;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.balance-percentage {
+  top: 20%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.expense-percentage {
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.credit-loan-percentage {
+  top: 20%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+.legend div {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.legend-color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+.balance {
+  background-color: #007bff;
+}
+.expense {
+  background-color: #28a745;
+}
+
+.credit-loan {
+  background-color: #ffc107;
+}
