@@ -21,6 +21,13 @@
   border-radius: 0.5rem;
   object-fit: cover;
 }
+@media (max-width: 760px) {
+  .header-bell,
+  .header-3dots,
+  .header-profile {
+    display: none;
+  }
+}
 /* end header */
 .main-column > div {
   margin-bottom: 20px;
