@@ -20,11 +20,27 @@
   border-radius: 0.5rem;
   object-fit: cover;
 }
-@media (max-width: 760px) {
-  .header-bell,
-  .header-3dots,
-  .header-profile {
-    display: none;
+@media (max-width: 768px) {
+  .header-search {
+    position: absolute;
+    top: 3.5rem;
+    width: 97%;
+    left: 1rem;
+    right: 5rem;
+  }
+  .form-search {
+    width: 100%;
+  }
+  .img-header {
+    position: absolute;
+    right: 4.5rem;
+  }
+
+  header > div {
+    height: 6rem;
+  }
+  .navbar-toggler {
+    top: -2rem;
   }
 }
 .main-column > div {
@@ -148,7 +164,7 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding: 15px 3px; 
+  padding: 15px 3px;
   overflow: hidden;
   border-radius: 1rem;
 }
@@ -157,7 +173,7 @@
   font-size: 3rem;
   font-weight: bolder;
   color: var(--heading-color);
-  margin: 1.5rem; 
+  margin: 1.5rem;
 }
 .contentTransation {
   display: flex;
@@ -263,23 +279,21 @@
 }
 
 @media screen and (min-width: 992px) {
-
-  .rightTransationBox span,
-  .btnRecent {
-    font-size: 0.7rem;
-  }  
-}
-@media screen and (max-width: 992px) {
-
   .rightTransationBox span,
   .btnRecent {
     font-size: 0.7rem;
   }
-  .leftTransationBox img{
+}
+@media screen and (max-width: 992px) {
+  .rightTransationBox span,
+  .btnRecent {
+    font-size: 0.7rem;
+  }
+  .leftTransationBox img {
     width: 80%;
     padding: 1rem;
-  } 
-} 
+  }
+}
 @media screen and (max-width: 768px) {
   .rightTransationBox span,
   .btnRecent {
