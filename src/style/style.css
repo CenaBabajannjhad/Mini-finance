@@ -551,16 +551,16 @@
 
 /* Heights for each category - adjust within 120 scale */
 .bar.income { height: 100px; }  /* 100 / 120 */
-.bar.expense { height: 60px; }  /* 60 / 120 */
+.bar.expense-c { height: 60px; }  /* 60 / 120 */
 .bar.transfer { height: 40px; } /* 40 / 120 */
 
 /* Different month data */
 .february .bar.income { height: 110px; }
-.february .bar.expense { height: 80px; }
+.february .bar.expense-c { height: 80px; }
 .february .bar.transfer { height: 30px; }
 
 .march .bar.income { height: 120px; }
-.march .bar.expense { height: 90px; }
+.march .bar.expense-c { height: 90px; }
 .march .bar.transfer { height: 50px; }
 
 .month-label {
@@ -598,5 +598,7 @@
   height: 20px;
   border-radius: 3px;
 }
-
+.line-chart{
+  background-color: #fff;
+}
 /* saeed line chart */
