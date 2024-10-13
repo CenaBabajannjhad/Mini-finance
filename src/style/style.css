@@ -1,4 +1,3 @@
-/* header */
 .header-search {
   width: 50%;
 }
@@ -28,10 +27,8 @@
     display: none;
   }
 }
-/* end header */
 .main-column > div {
   margin-bottom: 20px;
-  /* border: 1px solid #000; */
 }
 .exchange-rate {
   background: #a8dadc;
@@ -151,50 +148,53 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding: 1rem;
-  height: auto;
+  padding: 15px 3px; 
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
 .recentTransationBox h2 {
   font-size: 3rem;
   font-weight: bolder;
   color: var(--heading-color);
-  margin: 1.5rem;
+  margin: 1.5rem; 
 }
 .contentTransation {
   display: flex;
   width: 100%;
+  justify-content: space-around;
   margin: 1rem auto;
 }
+
 .leftTransationBox {
   width: 20%;
 }
+
 .leftTransationBox img {
-  float: left;
-  height: 100%;
   width: 100%;
-  border-radius: 5rem;
-  padding: 1rem;
+  border-radius: 50%;
+  object-fit: fill;
 }
+
 .rightTransationBox {
   display: grid;
-  width: 80%;
+  width: 60%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 1rem;
-  text-align: center;
-  align-items: center;
-  padding: 1rem;
 }
+
 .rightTransationBox span {
   padding: 5px;
-  font-size: 2.5rem;
+  font-size: 0.6rem;
   text-align: left;
   align-items: center;
 }
+
 .contentTransation:last-child {
   border-bottom: 1px solid gray;
 }
+
 .text-color {
   color: var(--p-color);
 }
@@ -202,10 +202,12 @@
 .dark-color {
   color: var(--dark-color);
 }
+
 .alarm-color {
   color: var(--primary-bg-color);
   font-weight: bolder;
 }
+
 .green-color {
   color: green;
   font-weight: bolder;
@@ -225,6 +227,9 @@
   color: white;
   font-weight: bolder;
   padding: 5px;
+  font-size: 0.7rem;
+  margin-bottom: 20px;
+  text-decoration: none;
 }
 .circle {
   height: 2rem;
@@ -235,6 +240,7 @@
 .btnRecent:hover {
   color: var(--custom-btn-bg-hover-color);
 }
+
 @media (max-width: 480px) {
   .leftTransationBox {
     width: 15%;
@@ -252,13 +258,170 @@
 @media (min-width: 768px) {
   .rightTransationBox span,
   .btnRecent {
-    font-size: 2.5rem;
+    font-size: 0.7rem;
   }
 }
 
-@media (max-width: 992px) {
+@media screen and (min-width: 992px) {
+
   .rightTransationBox span,
   .btnRecent {
-    font-size: 2rem;
+    font-size: 0.7rem;
+  }  
+}
+@media screen and (max-width: 992px) {
+
+  .rightTransationBox span,
+  .btnRecent {
+    font-size: 0.7rem;
   }
+  .leftTransationBox img{
+    width: 80%;
+    padding: 1rem;
+  } 
+} 
+@media screen and (max-width: 768px) {
+  .rightTransationBox span,
+  .btnRecent {
+    font-size: 0.75rem;
+  }
+}
+
+.card-Balance {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(234, 252, 220);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.balance h2 {
+  font-size: 14px;
+  color: #888;
+}
+
+.balance h1 {
+  font-size: 36px;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #0e1a2b;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-details p {
+  font-size: 14px;
+  color: #555;
+}
+.card-holder p {
+  font-size: 14px;
+  color: #000000;
+  margin-top: -10px;
+}
+.valid-date p {
+  font-size: 14px;
+  color: #000000;
+  margin-top: -10px;
+}
+.logo {
+  position: absolute;
+  top: -50px;
+  right: -15px;
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.red {
+  background-color: #ff4e42;
+}
+
+.orange {
+  background-color: #ffa500;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: -2px;
+  top: 1px;
+}
+.valid-card-holder {
+  display: flex;
+  justify-content: space-between;
+}
+/*shayan*/
+.send-money-container {
+  background-color: #ff4e4e;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.send-money-wraper {
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.send-money-head {
+  color: white;
+  background-color: blue;
+  font-size: 20px;
+  font-weight: 700;
+  width: 210px;
+}
+.send-money-content-boxs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 15px;
+}
+.send-money-content-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  color: #737d8e;
+  margin: 10px;
+}
+.send-money-content-box > div:nth-child(1) {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  background-color: white;
+  border-radius: 20px;
+}
+.send-money-content-box > div:nth-child(1) > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: white;
+  border-radius: 20px;
+}
+.sum > div {
+  background-color: white;
+  font-size: 50px;
+  color: #ff4e4e;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
 }
