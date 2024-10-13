@@ -369,6 +369,7 @@
     width: 40px !important;
     height: 40px !important;
     padding: 10px !important;
+    border-radius: 10px !important;
   }
 }
 @media screen and (max-width: 480px) {
@@ -380,6 +381,7 @@
     width: 30px !important;
     height: 30px !important;
     padding: 5px !important;
+    border-radius: 5px !important;
   }
 }
 .src-content-container {
@@ -389,6 +391,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   border-radius: 20px;
+  align-items: center;
   margin: 10px auto;
 }
 .src-content-box {
