@@ -20,11 +20,27 @@
   border-radius: 0.5rem;
   object-fit: cover;
 }
-@media (max-width: 760px) {
-  .header-bell,
-  .header-3dots,
-  .header-profile {
-    display: none;
+@media (max-width: 768px) {
+  .header-search {
+    position: absolute;
+    top: 3.5rem;
+    width: 97%;
+    left: 1rem;
+    right: 5rem;
+  }
+  .form-search {
+    width: 100%;
+  }
+  .img-header {
+    position: absolute;
+    right: 4.5rem;
+  }
+
+  header > div {
+    height: 6rem;
+  }
+  .navbar-toggler {
+    top: -2rem;
   }
 }
 .main-column > div {
