@@ -476,3 +476,198 @@
   justify-content: center;
   border-radius: 20px;
 }
+.history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.chart {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 20px;
+}
+.history-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.chart_body {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #007bff 0% 16.7%,
+    #28a745 16.7% 71.8%,
+    #ffc107 71.8% 100%
+  );
+}
+.percentage {
+  position: absolute;
+  font-size: 14px;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.balance-percentage {
+  top: 20%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.expense-percentage {
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.credit-loan-percentage {
+  top: 20%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+.legend div {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.legend-color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+.balance {
+  background-color: #007bff;
+}
+.expense {
+  background-color: #28a745;
+}
+
+.credit-loan {
+  background-color: #ffc107;
+}
+/* saeed line chart */
+
+
+.chart-container {
+  position: relative;
+  width: 90%;
+  height: 400px;
+  margin: auto;
+
+}
+
+.grid-line {
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  left: 0;
+  z-index: 0; /* Send grid lines to the background */
+}
+
+.grid-label {
+  position: absolute;
+  left: -30px;
+  font-size: 12px;
+  z-index: 1; /* Make labels visible above lines */
+  top: -10px;
+}
+
+.grid-line:nth-child(1) { top: 100%; }   /* 0 */
+.grid-line:nth-child(2) { top: 75%; }    /* 30 */
+.grid-line:nth-child(3) { top: 50%; }    /* 60 */
+.grid-line:nth-child(4) { top: 25%; }    /* 90 */
+.grid-line:nth-child(5) { top: 0; }      /* 120 */
+
+.bars-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 100%;
+  position: relative;
+  z-index: 1; /* Bars should be above the grid lines */
+}
+
+.month {
+  
+ flex-direction: column;
+  
+ 
+}
+
+.bars {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.bar {
+  width:7px;
+  
+}
+
+.income {
+  background-color: blue;
+}
+
+.expense-c {
+  background-color: green;
+}
+
+.transfer {
+  background-color: orange;
+}
+
+/* Heights for each category - adjust within 120 scale */
+.bar.income { height: 100px; }  /* 100 / 120 */
+.bar.expense-c { height: 60px; }  /* 60 / 120 */
+.bar.transfer { height: 40px; } /* 40 / 120 */
+
+/* Different month data */
+.february .bar.income { height: 110px; }
+.february .bar.expense-c { height: 80px; }
+.february .bar.transfer { height: 30px; }
+
+.march .bar.income { height: 120px; }
+.march .bar.expense-c { height: 90px; }
+.march .bar.transfer { height: 50px; }
+
+.month-label {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+/* Special case: Add Hello next to Sam (March) */
+.march-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.march-label span {
+  margin-left: 5px; /* Adjust spacing for "Hello" */
+}
+
+/* Optional legend */
+.legends {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-color-s {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+/* saeed line chart */
