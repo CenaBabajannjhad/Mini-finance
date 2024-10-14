@@ -175,7 +175,7 @@
 }
 
 .recentTransationBox h2 {
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: bolder;
   color: var(--heading-color);
   margin: 1.5rem;
@@ -275,6 +275,9 @@
   .btnRecent {
     font-size: 0.5rem;
   }
+  .leftTransationBox img {
+    width: 90%;
+  }
 }
 @media (min-width: 768px) {
   .rightTransationBox span,
@@ -286,24 +289,40 @@
 @media screen and (min-width: 992px) {
   .rightTransationBox span,
   .btnRecent {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 992px) {
   .rightTransationBox span,
   .btnRecent {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   .leftTransationBox img {
     width: 80%;
-    padding: 1rem;
+    
   }
 }
 @media screen and (max-width: 768px) {
   .rightTransationBox span,
   .btnRecent {
-    font-size: 0.75rem;
+    font-size: 1rem;
+   
   }
+  .leftTransationBox img {
+    width: 90%;
+  }
+ 
+}
+@media screen and (max-width: 375px) {
+  .rightTransationBox span,
+  .btnRecent {
+    font-size: 0.7rem;
+   
+  }
+  .leftTransationBox img {
+    width: 90%;
+  }
+ 
 }
 
 .card-Balance {
