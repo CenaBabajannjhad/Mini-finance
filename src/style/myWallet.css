@@ -1,3 +1,11 @@
-.card-Balance {
-  width: 50%;
+.balance {
+  background-color: transparent;
+}
+.line_container {
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .line_container {
+    flex-direction: column;
+  }
 }
