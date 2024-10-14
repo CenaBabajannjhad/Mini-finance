@@ -129,6 +129,8 @@
   border-radius: 50%;
   position: relative;
   left: 33%;
+  object-fit: cover;
+
 }
 
 .profile-information {
@@ -140,19 +142,20 @@
 }
 .profile-information-1 {
   display: flex;
-  font-family: "Inter";
+  /* font-family: "Inter"; */
   padding: 0 10px;
 }
 .profile-name {
   font-weight: 600;
+  font-size: 1rem;
 }
 
 .profile-information-2 {
-  font-family: "Inter";
+  /* font-family: "Inter"; */
   display: flex;
   color: #717275;
   padding-left: 5%;
-  font-size: 18px;
+  font-size: 13px;
 }
 .profile-type {
   margin-bottom: 5px;
@@ -706,7 +709,7 @@
 /* saeed line chart */
 
 .sidebar {
-  width: 370px;
+  /* width: 370px; */
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
