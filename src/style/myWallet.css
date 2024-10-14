@@ -4,8 +4,27 @@
 .line_container {
   display: flex;
 }
+.left-container {
+  width: 50%;
+}
+.recentTransationBox {
+  width: 50%;
+  height: 400px;
+}
+.contentTransation {
+  margin: 0;
+}
+.recentTransationBox img {
+  width: 60px;
+}
 @media screen and (max-width: 1200px) {
   .line_container {
     flex-direction: column;
+  }
+  .left-container {
+    width: 100%;
+  }
+  .recentTransationBox {
+    width: 100%;
   }
 }
