@@ -31,6 +31,28 @@
           Mini Finance
         </a>
       </div>
+      <form class="header-search">
+        <input
+          class="form-search"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </form>
+      <div class="img-header">
+        <img
+          src="./src/images/svg/icons8-bell.svg"
+          alt="bell"
+          class="header-bell"
+        />
+        <img src="./src/images/3dots.png" alt="bell" class="header-3dots" />
+
+        <img
+          src="./src/images/medium-shot-happy-man-smiling.jpg"
+          alt="Profile"
+          class="header-profile"
+        />
+      </div>
 
       <button
         class="navbar-toggler position-relative d-md-none collapsed"
@@ -111,11 +133,166 @@
           <div class="row my-4">
             <div class="col-lg-7 col-12 main-column">
               <!-- section > Your Balance -->
-              <div>Your Balance</div>
+              <div class="card-Balance">
+                <div class="balance">
+                  <h2>YOUR BALANCE</h2>
+                  <h1>$254,800</h1>
+                </div>
+                <div class="card-details">
+                  <p>**** **** **** 2560</p>
+                </div>
+                <div class="valid-card-holder">
+                  <div class="valid-date">
+                    <p style="color: #555">Valid Date</p>
+                    <p>12/2028</p>
+                  </div>
+                  <div class="card-holder">
+                    <p style="color: #555">Card Holder</p>
+                    <p>Thomas</p>
+                  </div>
+                </div>
+
+                <div class="logo">
+                  <div class="circle red"></div>
+                  <div class="circle orange"></div>
+                </div>
+              </div>
               <!-- section > History -->
-              <div>History</div>
+              <h2 class="history-title bg-whit">History</h2>
+              <div class="history bg-white">
+                <div class="chart">
+                  <div class="chart_body">
+                    <div class="percentage balance-percentage">16.7%</div>
+                    <div class="percentage expense-percentage">55.1%</div>
+                    <div class="percentage credit-loan-percentage">28.2%</div>
+                  </div>
+                </div>
+                <div class="sumery">
+                  <div><span class="legend-color balance"></span>Balance</div>
+                  <div><span class="legend-color expense"></span>Expense</div>
+                  <div>
+                    <span class="legend-color credit-loan"></span>Credit Loan
+                  </div>
+                </div>
+              </div>
               <!-- section > linear chart -->
-              <div>linear chart</div>
+
+              <div class="bg-white linear-chart">
+                <div  class="text-end m-4"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+  
+
+
+                <div class="chart-container bg-white">
+                    <!-- Grid lines and labels -->
+                    <div class="grid-line"><span class="grid-label">0</span></div>
+                    <div class="grid-line"><span class="grid-label">30</span></div>
+                    <div class="grid-line"><span class="grid-label">60</span></div>
+                    <div class="grid-line"><span class="grid-label">90</span></div>
+                    <div class="grid-line"><span class="grid-label">120</span></div>
+                
+                    <!-- Bar chart -->
+                    <div class="bars-container col-12">
+                          <!-- February -->
+                          <div class="month february ">
+                            <div class="bars">
+                                <div class="bar income"></div>
+                                <div class="bar expense-c "></div>
+                                <div class="bar transfer"></div>
+                            </div>
+                            <div class="month-label ">Feb</div>
+                        </div>
+                        
+                             <!-- march -->
+                             <div class="month february">
+                              <div class="bars">
+                                  <div class="bar income"></div>
+                                  <div class="bar expense-c "></div>
+                                  <div class="bar transfer"></div>
+                              </div>
+                              <div class="month-label">Mar</div>
+                          </div>
+                        <!-- January -->
+                        <div class="month">
+                            <div class="bars">
+                                <div class="bar income"></div>
+                                <div class="bar expense-c "></div>
+                                <div class="bar transfer"></div>
+                            </div>
+                            <div class="month-label">Jan</div>
+                        </div>
+                        <!-- april -->
+                        <div class="month">
+                          <div class="bars">
+                              <div class="bar income"></div>
+                              <div class="bar expense-c "></div>
+                              <div class="bar transfer"></div>
+                          </div>
+                          <div class="month-label">Apr</div>
+                      </div>
+                       
+                    <!-- jon -->
+                    <div class="month">
+                      <div class="bars">
+                          <div class="bar income"></div>
+                          <div class="bar expense-c "></div>
+                          <div class="bar transfer"></div>
+                      </div>
+                      <div class="month-label">Jun</div>
+                  </div>
+                   <!-- JUL -->
+                   <div class="month">
+                    <div class="bars">
+                        <div class="bar income"></div>
+                        <div class="bar expense-c "></div>
+                        <div class="bar transfer"></div>
+                    </div>
+                    <div class="month-label">Jul</div>
+                </div>
+                     <!-- Aug -->
+                     <div class="month">
+                      <div class="bars">
+                          <div class="bar income"></div>
+                          <div class="bar expense-c "></div>
+                          <div class="bar transfer"></div>
+                      </div>
+                      <div class="month-label">Aug</div>
+                  </div>
+                     <!-- Sep -->
+                     <div class="month">
+                      <div class="bars">
+                          <div class="bar income"></div>
+                          <div class="bar expense-c "></div>
+                          <div class="bar transfer"></div>
+                      </div>
+                      <div class="month-label">Sep</div>
+                  </div>
+                     <!-- OCt -->
+                     <div class="month">
+                      <div class="bars">
+                          <div class="bar income"></div>
+                          <div class="bar expense-c "></div>
+                          <div class="bar transfer"></div>
+                      </div>
+                      <div class="month-label">Oct</div>
+                  </div>
+                    </div>
+                </div>
+                
+                <!-- Optional legend -->
+                <div class="legends">
+                    <div class="legend-item">
+                        <div class="legend-color-s" style="background-color: blue;"></div>
+                        <div>Income</div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color-s" style="background-color: green;"></div>
+                        <div>Expense</div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color-s" style="background-color: orange;"></div>
+                        <div>Transfer</div>
+                    </div>
+                </div></div>
               <!-- section > exchange rate -->
               <div class="exchange-rate">
                 <div class="exchange-title-wrapper">
@@ -279,11 +456,92 @@
                 </div>
               </div>
               <!-- section > action section -->
-              <div>action section</div>
+              <div><div class="src-content-container">
+      <div class="src-content-box">
+        <div><img class="img-1" src="assets/wallet-solid.svg" alt="" /></div>
+        <div>Top up</div>
+      </div>
+      <div class="src-content-box">
+        <div><img class="img-2" src="assets/barcode-solid.svg" alt="" /></div>
+        <div>Scan & Pay</div>
+      </div>
+      <div class="src-content-box">
+        <div><img class="img-3" src="assets/paper-plane-solid.svg" alt="" /></div>
+        <div>Send</div>
+      </div>
+      <div class="src-content-box">
+        <div><img class="img-4" src="assets/arrow-down-long-solid.svg" alt="" /></div>
+        <div>Request</div>
+      </div>
+    </div></div>
               <!-- section > recent transation -->
-              <div>Recent Transations</div>
+              <div class="recentTransationBox">
+                <h2> Recent Transations </h2>
+             
+            <div class="contentTransation">
+              <div class="leftTransationBox">
+                <img src="./src/images/team-4.jpg" alt="team-1">
+              </div>
+              <div class="rightTransationBox">
+                <span class="dark-color"><a href="#" class="dark-color"> Ali Ahmadi </a></span>
+                <span class="text-color"> 05/02/1403</span>
+                <span class="text-color"> C2C Transfer </span>
+                <span class="text-4 alarm-color"> - $250</span>
+              </div>
+               </div>
+             
+             
+              <div class="contentTransation">
+              <div class="leftTransationBox">
+                <img src="./src/images/team-1.jpg" alt="team-1">
+              </div>
+              <div class="rightTransationBox">
+                <span class="dark-color"><a href="#" class="dark-color"> Store </a></span>
+                <span class="text-color"> 05/02/1403</span>
+                <span class="text-color "> Payment Received </span>
+                <span class="text-4 green-color"> + $250</span>
+              </div>
+               </div>
+             
+             
+              <div class="contentTransation">
+              <div class="leftTransationBox">
+                <img src="./src/images/team-2.jpg" alt="team-1">
+              </div>
+              <div class="rightTransationBox">
+                <span class="dark-color"> <a href="#" class="dark-color">Public Bank </a> </span>
+                <span class="text-color"> 05/02/2024</span>
+                <span class="text-color"> Mobile Reload </span>
+                <span class="text-4 alarm-color"> - $250</span>
+              </div>
+               </div>
+             <div class="hr1"></div>
+             
+              </br>
+              <a href="#" class="btnRecent">View all transations <i class="circle">.</i></a>
+             
+             </div>          
               <!-- section > send money -->
-              <div>Send Money</div>
+              <div class="send-money-container">
+                <div class="send-money-wraper">
+                  <span class="send-money-head">send money</span>
+                  <div class="send-money-content-boxs">
+                    
+          <div class="send-money-content-box">
+            <div><img class="img-1" src="assets/person.png" alt="" /></div>
+          </div>
+          <div class="send-money-content-box">
+            <div><img class="img-2" src="assets/person.png" alt="" /></div>
+          </div>
+          <div class="send-money-content-box">
+            <div><img class="img-3" src="assets/person.png" alt="" /></div>
+          </div>
+          <div class="send-money-content-box sum">
+            <div><div>+</div></div>
+          </div>
+                  
+                </div>
+              </div>
             </div>
             <!-- footer place -->
             <footer>footer</footer>
