@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Help Center</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mini Finance</title>
+    <!-- CSS FILES -->
     <link
       href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -18,10 +19,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="../../src/style/global.css" />
-    <link rel="stylesheet" href="../../src/style/style.css" />
+    <link rel="stylesheet" href="src/style/global.css" />
+    <link rel="stylesheet" href="src/style/style.css" />
   </head>
   <body>
+    <!-- sticky-top -->
     <header class="navbar sticky-top flex-md-nowrap border-bottom">
       <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
         <a class="navbar-brand" href="index.html">
@@ -64,84 +66,93 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </header>
-
+ 
     <div class="container-fluid main-container-wrapper">
       <div class="row">
         <nav
           id="sidebarMenu"
-          class="col-md-3 col-lg-3 d-md-block sidebar collapse"
+          class="col-md-3 col-lg-3 d-md-block sidebar position-fixed collapse"
         >
           <div class="position-sticky py-4 px-3 sidebar-sticky">
             <ul>
               <li>
                 <a href="#" class="active">
-                  <img src="../images/svg/overview.svg" alt="home svg" />
+                  <img src="./src/images/svg/overview.svg" alt="home svg" />
                   Overview</a
                 >
               </li>
               <li>
                 <a href="#">
-                  <img src="../images/svg/wallet.svg" alt="wallet svg" />
+                  <img src="./src/images/svg/wallet.svg" alt="wallet svg" />
                   My Wallet</a
                 >
               </li>
               <li>
                 <a href="#">
                   <img
-                    src="../images/svg/profile.svg"
+                    src="./src/images/svg/profile.svg"
                     alt="profile svg"
                   />Profile</a
                 >
               </li>
               <li>
                 <a href="#">
-                  <img src="../images/svg/setting.svg" alt="cog svg" />
+                  <img src="./src/images/svg/setting.svg" alt="cog svg" />
                   Settings</a
                 >
               </li>
               <li>
                 <a href="#">
-                  <img src="../images/svg/help.svg" alt=" question svg" />
+                  <img src="./src/images/svg/help.svg" alt=" question svg" />
                   Help Center</a
                 >
               </li>
             </ul>
             <div class="upgrade-section">
-              <img src="../images/credit-card.png" alt="Card Image" />
+              <img src="./src/images/credit-card.png" alt="Card Image" />
               <button class="upgrade-button">Upgrade</button>
             </div>
             <hr class="divider" />
             <div class="logout">
               <a href="#">
-                <img src="../images/svg/logout.svg" alt=" logout svg" />
+                <img src="./src/images/svg/logout.svg" alt=" logout svg" />
                 Logout</a
               >
             </div>
           </div>
         </nav>
+
         <main
-          class="overflow-auto col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start"
+          class="overflow-auto col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start bg-secondary"
         >
-          <div class="line_help">
-            <div class="card-search col">How Can We Help</div>
-
-            <div class="left-help">
-              <div class="frequently-help col-7">
-               
-            </div>
-
-            <div class="search-help col-7">
+          <!-- section > main header -->
+          <section class="mb-3 col-12">
+            <h1 class="h2 mb-0">profile</h1>
+          </section>
+          <div class="container text-center">
+            <div class="row g-2">
+              <div class=" col-sm-11 col-md-8  my-3 mx-1 bg-white ">
+                <div class="p-3">General</div>
+              </div>
+              <div class=" col-sm-11 col-md-3  my-3 mx-1 bg-white">
+                <div class="p-3">chat with me</div>
+              </div>
+              <div class=" col-sm-11 col-md-8  my-3 mx-1 bg-white">
+                <div class="p-3">card info</div>
+              </div>
               
             </div>
           </div>
-          <div class="still-help col-5">         </div>
         </main>
+        
       </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./src/script/script.js"></script>
   </body>
 </html>
