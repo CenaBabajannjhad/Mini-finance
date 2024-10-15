@@ -17,6 +17,28 @@
 .recentTransationBox img {
   width: 60px;
 }
+table {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0;
+}
+td,
+th {
+  padding: 5px;
+}
+th {
+  background-color: #00bbd495;
+  color: #fff;
+}
+tr:nth-child(even) {
+  background-color: #e4e3e3;
+}
+.sucess {
+  color: rgb(3, 165, 3);
+}
+.danger {
+  color: red;
+}
 @media screen and (max-width: 1200px) {
   .line_container {
     flex-direction: column;
@@ -26,5 +48,10 @@
   }
   .recentTransationBox {
     width: 100%;
+  }
+}
+@media screen and (max-width: 950px) {
+  table {
+    font-size: 13px;
   }
 }
