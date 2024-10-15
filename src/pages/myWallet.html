@@ -72,33 +72,251 @@
           id="sidebarMenu"
           class="col-md-3 col-lg-3 d-md-block sidebar collapse"
         >
-          <div class="position-sticky py-4 px-3 sidebar-sticky">side bar</div>
+          <div class="position-sticky py-4 px-3 sidebar-sticky">
+            <ul>
+              <li>
+                <a href="#" class="active">
+                  <img src="../images/svg/overview.svg" alt="home svg" />
+                  Overview</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../images/svg/wallet.svg" alt="wallet svg" />
+                  My Wallet</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="../images/svg/profile.svg"
+                    alt="profile svg"
+                  />Profile</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../images/svg/setting.svg" alt="cog svg" />
+                  Settings</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../images/svg/help.svg" alt=" question svg" />
+                  Help Center</a
+                >
+              </li>
+            </ul>
+            <div class="upgrade-section">
+              <img src="../images/credit-card.png" alt="Card Image" />
+              <button class="upgrade-button">Upgrade</button>
+            </div>
+            <hr class="divider" />
+            <div class="logout">
+              <a href="#">
+                <img src="../images/svg/logout.svg" alt=" logout svg" />
+                Logout</a
+              >
+            </div>
+          </div>
         </nav>
         <main
           class="overflow-auto col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start"
         >
-          <div class="card-Balance">
-            <div class="balance">
-              <h2>YOUR BALANCE</h2>
-              <h1>$254,800</h1>
-            </div>
-            <div class="card-details">
-              <p>**** **** **** 2560</p>
-            </div>
-            <div class="valid-card-holder">
-              <div class="valid-date">
-                <p style="color: #555">Valid Date</p>
-                <p>12/2028</p>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Description</th>
+              <th>Payment type</th>
+              <th>Amount</th>
+              <th>Balance</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>July 5, 2023</td>
+              <td>10:00 PM</td>
+              <td>Shopping</td>
+              <td>C2C transfer</td>
+              <td class="danger">$10000</td>
+              <td>$5,500,00</td>
+              <td>Pending</td>
+            </tr>
+            <tr>
+              <td>July 2, 2023</td>
+              <td>10:42 AM</td>
+              <td>Food Deliveery</td>
+              <td>Mobile Reload</td>
+              <td class="danger">$260</td>
+              <td>$5,600,00</td>
+              <td>Test</td>
+            </tr>
+            <tr>
+              <td>June 28, 2023</td>
+              <td>8:20 AM</td>
+              <td>Bairing</td>
+              <td>Mobile Reload</td>
+              <td class="danger">$60</td>
+              <td>$5,350,00</td>
+              <td>Test</td>
+            </tr>
+            <tr>
+              <td>July 2, 2023</td>
+              <td>10:42 AM</td>
+              <td>Food Deliveery</td>
+              <td>Mobile Reload</td>
+              <td class="sucess">$260</td>
+              <td>$5,600,00</td>
+              <td>Test</td>
+            </tr>
+            <tr>
+              <td>July 5, 2023</td>
+              <td>10:00 PM</td>
+              <td>Shopping</td>
+              <td>C2C transfer</td>
+              <td class="danger">$10000</td>
+              <td>$5,500,00</td>
+              <td>Pending</td>
+            </tr>
+            <tr>
+              <td>July 2, 2023</td>
+              <td>10:42 AM</td>
+              <td>Food Deliveery</td>
+              <td>Mobile Reload</td>
+              <td class="sucess">$260</td>
+              <td>$5,600,00</td>
+              <td>Test</td>
+            </tr>
+            <tr>
+              <td>July 5, 2023</td>
+              <td>10:00 PM</td>
+              <td>Shopping</td>
+              <td>C2C transfer</td>
+              <td class="sucess">$10000</td>
+              <td>$5,500,00</td>
+              <td>Pending</td>
+            </tr>
+          </table>
+          <div class="line_container">
+            <div class="left-container">
+              <div class="card-Balance col-md-12">
+                <div class="balance">
+                  <h2>YOUR BALANCE</h2>
+                  <h1>$254,800</h1>
+                </div>
+                <div class="card-details">
+                  <p>**** **** **** 2560</p>
+                </div>
+                <div class="valid-card-holder">
+                  <div class="valid-date">
+                    <p style="color: #555">Valid Date</p>
+                    <p>12/2028</p>
+                  </div>
+                  <div class="card-holder">
+                    <p style="color: #555">Card Holder</p>
+                    <p>Thomas</p>
+                  </div>
+                </div>
+
+                <div class="logo">
+                  <div class="circle red"></div>
+                  <div class="circle orange"></div>
+                </div>
               </div>
-              <div class="card-holder">
-                <p style="color: #555">Card Holder</p>
-                <p>Thomas</p>
+              <div class="src-content-container">
+                <div class="src-content-box">
+                  <div>
+                    <img
+                      class="img-1"
+                      src="../../assets/wallet-solid.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>Top up</div>
+                </div>
+                <div class="src-content-box">
+                  <div>
+                    <img
+                      class="img-2"
+                      src="../../assets/barcode-solid.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>Scan & Pay</div>
+                </div>
+                <div class="src-content-box">
+                  <div>
+                    <img
+                      class="img-3"
+                      src="../../assets/paper-plane-solid.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>Send</div>
+                </div>
+                <div class="src-content-box">
+                  <div>
+                    <img
+                      class="img-4"
+                      src="../../assets/arrow-down-long-solid.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>Request</div>
+                </div>
               </div>
             </div>
 
-            <div class="logo">
-              <div class="circle red"></div>
-              <div class="circle orange"></div>
+            <div class="recentTransationBox">
+              <h2>Recent Transations</h2>
+
+              <div class="contentTransation">
+                <div class="leftTransationBox">
+                  <img src="../images/team-4.jpg" alt="team-1" />
+                </div>
+                <div class="rightTransationBox">
+                  <span class="dark-color"
+                    ><a href="#" class="dark-color"> Ali Ahmadi </a></span
+                  >
+                  <span class="text-color"> 05/02/1403</span>
+                  <span class="text-color"> C2C Transfer </span>
+                  <span class="text-4 alarm-color"> - $250</span>
+                </div>
+              </div>
+
+              <div class="contentTransation">
+                <div class="leftTransationBox">
+                  <img src="../images/team-1.jpg" alt="team-1" />
+                </div>
+                <div class="rightTransationBox">
+                  <span class="dark-color"
+                    ><a href="#" class="dark-color"> Store </a></span
+                  >
+                  <span class="text-color"> 05/02/1403</span>
+                  <span class="text-color"> Payment Received </span>
+                  <span class="text-4 green-color"> + $250</span>
+                </div>
+              </div>
+
+              <div class="contentTransation">
+                <div class="leftTransationBox">
+                  <img src="../images/team-2.jpg" alt="team-1" />
+                </div>
+                <div class="rightTransationBox">
+                  <span class="dark-color">
+                    <a href="#" class="dark-color">Public Bank </a>
+                  </span>
+                  <span class="text-color"> 05/02/2024</span>
+                  <span class="text-color"> Mobile Reload </span>
+                  <span class="text-4 alarm-color"> - $250</span>
+                </div>
+              </div>
+              <div class="hr1"></div>
+
+              <br />
+              <a href="#" class="btnRecent"
+                >View all transations <i class="circle">.</i></a
+              >
             </div>
           </div>
         </main>
