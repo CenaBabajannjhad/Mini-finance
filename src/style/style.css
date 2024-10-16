@@ -1,4 +1,3 @@
-
 .header-search {
   width: 50%;
 }
@@ -158,7 +157,6 @@
   margin-bottom: 5px;
   margin-top: 5px;
 }
-
 
 .recentTransationBox {
   background-color: var(--secondary-color);
@@ -495,10 +493,6 @@
   border-radius: 20px;
 }
 
-
-
-
-
 .history {
   display: flex;
   align-items: center;
@@ -508,7 +502,7 @@
   box-shadow: 0px 5px 15px #0000000f;
 }
 
-.linear-chart{
+.linear-chart {
   border-radius: 10px;
   box-shadow: 0px 5px 15px #0000000f;
 }
@@ -580,13 +574,11 @@
 
 /* saeed line chart */
 
-
 .chart-container {
   position: relative;
   width: 90%;
   height: 400px;
   margin: auto;
-
 }
 
 .grid-line {
@@ -605,11 +597,21 @@
   top: -10px;
 }
 
-.grid-line:nth-child(1) { top: 100%; }   /* 0 */
-.grid-line:nth-child(2) { top: 75%; }    /* 30 */
-.grid-line:nth-child(3) { top: 50%; }    /* 60 */
-.grid-line:nth-child(4) { top: 25%; }    /* 90 */
-.grid-line:nth-child(5) { top: 0; }      /* 120 */
+.grid-line:nth-child(1) {
+  top: 100%;
+} /* 0 */
+.grid-line:nth-child(2) {
+  top: 75%;
+} /* 30 */
+.grid-line:nth-child(3) {
+  top: 50%;
+} /* 60 */
+.grid-line:nth-child(4) {
+  top: 25%;
+} /* 90 */
+.grid-line:nth-child(5) {
+  top: 0;
+} /* 120 */
 
 .bars-container {
   display: flex;
@@ -621,10 +623,7 @@
 }
 
 .month {
-  
- flex-direction: column;
-  
- 
+  flex-direction: column;
 }
 
 .bars {
@@ -635,8 +634,7 @@
 }
 
 .bar {
-  width:7px;
-  
+  width: 7px;
 }
 
 .income {
@@ -652,23 +650,41 @@
 }
 
 /* Heights for each category - adjust within 120 scale */
-.bar.income { height: 100px; }  /* 100 / 120 */
-.bar.expense-c { height: 60px; }  /* 60 / 120 */
-.bar.transfer { height: 40px; } /* 40 / 120 */
+.bar.income {
+  height: 100px;
+} /* 100 / 120 */
+.bar.expense-c {
+  height: 60px;
+} /* 60 / 120 */
+.bar.transfer {
+  height: 40px;
+} /* 40 / 120 */
 
 /* Different month data */
-.february .bar.income { height: 110px; }
-.february .bar.expense-c { height: 80px; }
-.february .bar.transfer { height: 30px; }
+.february .bar.income {
+  height: 110px;
+}
+.february .bar.expense-c {
+  height: 80px;
+}
+.february .bar.transfer {
+  height: 30px;
+}
 
-.march .bar.income { height: 120px; }
-.march .bar.expense-c { height: 90px; }
-.march .bar.transfer { height: 50px; }
+.march .bar.income {
+  height: 120px;
+}
+.march .bar.expense-c {
+  height: 90px;
+}
+.march .bar.transfer {
+  height: 50px;
+}
 
 .month-label {
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Special case: Add Hello next to Sam (March) */
@@ -700,8 +716,6 @@
   height: 20px;
   border-radius: 3px;
 }
-
-
 
 /* saeed line chart */
 
@@ -814,3 +828,42 @@
   }
 }
 
+.search-container {
+  width: 500px;
+  margin-left: 300px;
+  margin-top: 100px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.search-h2 {
+  margin-bottom: 15px;
+  margin-right: 200px;
+  font-weight: 600;
+  color: #0f2a48;
+}
+
+.search-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.submit-button {
+  width: 150px;
+  padding: 10px 20px;
+  background-color: #0f2a48;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
