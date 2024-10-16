@@ -128,6 +128,8 @@
   border-radius: 50%;
   position: relative;
   left: 33%;
+  object-fit: cover;
+
 }
 
 .profile-information {
@@ -139,19 +141,20 @@
 }
 .profile-information-1 {
   display: flex;
-  font-family: "Inter";
+  /* font-family: "Inter"; */
   padding: 0 10px;
 }
 .profile-name {
   font-weight: 600;
+  font-size: 1rem;
 }
 
 .profile-information-2 {
-  font-family: "Inter";
+  /* font-family: "Inter"; */
   display: flex;
   color: #717275;
   padding-left: 5%;
-  font-size: 18px;
+  font-size: 13px;
 }
 .profile-type {
   margin-bottom: 5px;
@@ -170,7 +173,7 @@
 }
 
 .recentTransationBox h2 {
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: bolder;
   color: var(--heading-color);
   margin: 1.5rem;
@@ -255,6 +258,32 @@
 }
 .btnRecent:hover {
   color: var(--custom-btn-bg-hover-color);
+    
+}
+.frequentiy-help{
+  background-color: var(--bs-success-bg-subtle);
+  padding: 1rem;
+  margin: 1rem;
+}
+.frequentiy-title{
+  color:var(--heading-color) ;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 30px;
+}
+.frequentiyBox{
+  margin-bottom: 1rem;
+}
+.frequentiyBox .frequentiyQuestion{
+  font-size: 1rem;
+  font-weight:900px;
+}
+.frequentiyBox .frequentiyAnswer{
+  font-size: 0.75rem;
+   color: var(--p-color);
+   line-height: 20px;
+   text-align: justify;
 }
 
 @media (max-width: 480px) {
@@ -270,6 +299,19 @@
   .btnRecent {
     font-size: 0.5rem;
   }
+  .leftTransationBox img {
+    width: 90%;
+  }
+  .frequentiy-title{
+    
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 30px;
+}
+.frequentiyBox .frequentiyQuestion{
+  font-size: 0.8rem;
+  
+}
 }
 @media (min-width: 768px) {
   .rightTransationBox span,
@@ -281,24 +323,50 @@
 @media screen and (min-width: 992px) {
   .rightTransationBox span,
   .btnRecent {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 992px) {
   .rightTransationBox span,
   .btnRecent {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   .leftTransationBox img {
     width: 80%;
-    padding: 1rem;
+    
   }
 }
 @media screen and (max-width: 768px) {
   .rightTransationBox span,
   .btnRecent {
-    font-size: 0.75rem;
+    font-size: 1rem;
+   
   }
+  .leftTransationBox img {
+    width: 90%;
+  }
+  .frequentiy-title{
+    
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 30px;
+}
+.frequentiyBox .frequentiyQuestion{
+  font-size: 0.8rem;
+  
+}
+ 
+}
+@media screen and (max-width: 375px) {
+  .rightTransationBox span,
+  .btnRecent {
+    font-size: 0.7rem;
+   
+  }
+  .leftTransationBox img {
+    width: 90%;
+  }
+ 
 }
 
 .card-Balance {
@@ -720,7 +788,7 @@
 /* saeed line chart */
 
 .sidebar {
-  width: 370px;
+  /* width: 370px; */
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;

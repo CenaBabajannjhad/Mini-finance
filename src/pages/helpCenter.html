@@ -7,10 +7,164 @@
     <title>Help Center</title>
   </head>
   <body>
-    <div class="search-container">
-      <h2 class="search-h2">Search for the topics</h2>
-      <input type="text" placeholder="Search" class="search-input" />
-      <button class="submit-button">Submit</button>
+    <title>Help Center</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../../src/style/global.css" />
+    <link rel="stylesheet" href="../../src/style/style.css" />
+  </head>
+  <body>
+    <header class="navbar sticky-top flex-md-nowrap border-bottom">
+      <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
+        <a class="navbar-brand" href="index.html">
+          <i class="bi-box"></i>
+          Mini Finance
+        </a>
+      </div>
+      <form class="header-search">
+        <div class="search-container">
+          <h2 class="search-h2">Search for the topics</h2>
+          <input type="text" placeholder="Search" class="search-input" />
+          <button class="submit-button">Submit</button>
+        </div>
+      </form>
+      <div class="img-header">
+        <img
+          src="/src/images/svg/icons8-bell.svg"
+          alt="bell"
+          class="header-bell"
+        />
+        <img src="/src/images/3dots.png" alt="bell" class="header-3dots" />
+
+        <img
+          src="/src/images/medium-shot-happy-man-smiling.jpg"
+          alt="Profile"
+          class="header-profile"
+        />
+      </div>
+
+      <button
+        class="navbar-toggler position-relative d-md-none collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu"
+        aria-controls="sidebarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </header>
+
+    <div class="container-fluid main-container-wrapper">
+      <div class="row">
+        <nav
+          id="sidebarMenu"
+          class="col-md-3 col-lg-3 d-md-block sidebar collapse"
+        >
+          <div class="position-sticky py-4 px-3 sidebar-sticky">
+            <ul>
+              <li>
+                <a href="#" class="active">
+                  <img src="/src/images/svg/overview.svg" alt="home svg" />
+                  Overview</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/src/images/svg/wallet.svg" alt="wallet svg" />
+                  My Wallet</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="/src/images/svg/profile.svg"
+                    alt="profile svg"
+                  />Profile</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/src/images/svg/setting.svg" alt="cog svg" />
+                  Settings</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/src/images/svg/help.svg" alt=" question svg" />
+                  Help Center</a
+                >
+              </li>
+            </ul>
+            <div class="upgrade-section">
+              <img src="/src/images/credit-card.png" alt="Card Image" />
+              <button class="upgrade-button">Upgrade</button>
+            </div>
+            <hr class="divider" />
+            <div class="logout">
+              <a href="#">
+                <img src="../images/svg/logout.svg" alt=" logout svg" />
+                Logout</a
+              >
+            </div>
+          </div>
+        </nav>
+        <main
+          class="overflow-auto col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start"
+        >
+          <div class="line_help">
+            <div class="card-search col">How Can We Help</div>
+            <div class="row my-4">
+
+         
+
+            <div class="search-help col-7"></div> 
+            <div class="still-help col-5"></div>
+           <div class="frequentiy-help col-7">
+              <span class="frequentiy-title">Frequentiy Asked Questions</span>
+              <div class="frequentiyBox">
+                <span class="frequentiyQuestion">What is Mini finance Template?</span>
+                <p class="frequentiyAnswer"> mini Finance Template Include total 6 HTML for your customizations.it is free of change provided by Tooplate website.</p>
+              </div>
+
+              <div class="frequentiyBox">
+                <span class="frequentiyQuestion">What is Free Html Template?</span>
+                <p class="frequentiyAnswer"> Free Html Template is a ready mode of web page based on HTML CSS Codes.</p>
+              </div>
+
+              <div class="frequentiyBox">
+                <span class="frequentiyQuestion">What is the best code editor?</span>
+                <p class="frequentiyAnswer">Popular code editors are Dreamweaver ,notePad++ ,Visual Studio code ,Rapid CSS ,Sublime Text , and Atomto edit Html Css Js codes and put in your own web contents..</p>
+              </div>
+
+              <div class="frequentiyBox">
+                <span class="frequentiyQuestion">Are All template Free to Download?</span>
+                <p class="frequentiyAnswer">   yes , All CSS Templates Are 100% free to download and use for your websites.you can also use them for learning Html Cssand JavaScripts..</p>
+              </div>
+           </div>
+         
+        </div>
+        </main>
+      </div>
+      </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
