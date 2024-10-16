@@ -260,6 +260,32 @@
 }
 .btnRecent:hover {
   color: var(--custom-btn-bg-hover-color);
+    
+}
+.frequentiy-help{
+  background-color: var(--bs-success-bg-subtle);
+  padding: 1rem;
+  margin: 1rem;
+}
+.frequentiy-title{
+  color:var(--heading-color) ;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 30px;
+}
+.frequentiyBox{
+  margin-bottom: 1rem;
+}
+.frequentiyBox .frequentiyQuestion{
+  font-size: 1rem;
+  font-weight:900px;
+}
+.frequentiyBox .frequentiyAnswer{
+  font-size: 0.75rem;
+   color: var(--p-color);
+   line-height: 20px;
+   text-align: justify;
 }
 
 @media (max-width: 480px) {
@@ -278,6 +304,16 @@
   .leftTransationBox img {
     width: 90%;
   }
+  .frequentiy-title{
+    
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 30px;
+}
+.frequentiyBox .frequentiyQuestion{
+  font-size: 0.8rem;
+  
+}
 }
 @media (min-width: 768px) {
   .rightTransationBox span,
@@ -311,6 +347,16 @@
   .leftTransationBox img {
     width: 90%;
   }
+  .frequentiy-title{
+    
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 30px;
+}
+.frequentiyBox .frequentiyQuestion{
+  font-size: 0.8rem;
+  
+}
  
 }
 @media screen and (max-width: 375px) {
