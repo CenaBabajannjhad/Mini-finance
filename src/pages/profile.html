@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../style/global.css" />
     <link rel="stylesheet" href="../style/style.css" />
   </head>
+
   <body>
     <!-- sticky-top -->
     <header class="navbar sticky-top flex-md-nowrap border-bottom">
@@ -66,7 +67,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </header>
- 
+
     <div class="container-fluid main-container-wrapper">
       <div class="row">
         <nav
@@ -76,19 +77,19 @@
           <div class="position-sticky py-4 px-3 sidebar-sticky">
             <ul>
               <li>
-                <a href="#" class="active">
+                <a href="../../index.html" class="active">
                   <img src="../images/svg/overview.svg" alt="home svg" />
                   Overview</a
                 >
               </li>
               <li>
-                <a href="#">
+                <a href="./myWallet.html">
                   <img src="../images/svg/wallet.svg" alt="wallet svg" />
                   My Wallet</a
                 >
               </li>
               <li>
-                <a href="#">
+                <a href="./profile.html">
                   <img
                     src="../images/svg/profile.svg"
                     alt="profile svg"
@@ -96,13 +97,13 @@
                 >
               </li>
               <li>
-                <a href="#">
+                <a href="./setting.html">
                   <img src="../images/svg/setting.svg" alt="cog svg" />
                   Settings</a
                 >
               </li>
               <li>
-                <a href="#">
+                <a href="./helpCenter.html">
                   <img src="../images/svg/help.svg" alt=" question svg" />
                   Help Center</a
                 >
@@ -123,7 +124,7 @@
         </nav>
 
         <main
-          class="overflow-auto col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start bg-secondary"
+          class="overflow-auto col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start"
         >
           <!-- section > main header -->
           <section class="mb-3 col-12">
@@ -131,20 +132,69 @@
           </section>
           <div class="container text-center">
             <div class="row g-2">
-              <div class=" col-sm-11 col-md-8  my-3 mx-1 bg-white ">
-                <div class="p-3">General</div>
+              <!-- start general section => cena -->
+              <div
+                class="col-sm-11 col-md-8 my-3 mx-1 shadow-sm rounded-3 general-section-parent"
+              >
+                <div class="p-3">
+                  <h4 class="text-start">General</h4>
+                  <div class="m-1 text-start general-section">
+                    <div class="general-profile text-start">
+                      <img
+                        width="100px"
+                        height="100px"
+                        class="rounded-circle object-fit-cover"
+                        src="/src/images/medium-shot-happy-man-smiling.jpg"
+                        alt="thomas"
+                      />
+                      <img
+                        class="edit-profile-btn"
+                        src="/src/images/svg/write-svgrepo-com (1).svg"
+                        alt="svg"
+                      />
+                    </div>
+
+                    <div class="general-profile-about">
+                      <div class="general-profile-titles">
+                        <h6>Name :</h6>
+                        <h6>Email :</h6>
+                        <h6>Phone :</h6>
+                        <h6>Birthday :</h6>
+                        <h6>Address :</h6>
+                      </div>
+                      <div class="general-profile-title-values">
+                        <p>Thomas Edison</p>
+                        <p>Thomas@site.com</p>
+                        <p>(60) 12 345 6789</p>
+                        <p>March 5, 1992</p>
+                        <p>551 Swanston Sreet,Melbourne</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class=" col-sm-11 col-md-3  my-3 mx-1 bg-white">
-                <div class="p-3">chat with me</div>
+              <!-- end general section => cena -->
+              <div class="col-sm-11 col-md-3 my-3 mx-1 bg-white">
+                <div class="p-3">
+                  <h4 class="text-start">General</h4>
+                </div>
               </div>
-              <div class=" col-sm-11 col-md-8  my-3 mx-1 bg-white">
-                <div class="p-3">card info</div>
+              <!-- start card information -->
+              <div class="col-sm-11 col-md-8 my-3 mx-1 bg-white">
+                <div class="p-3 card_information">
+                  <h2>Card Information</h2>
+                  <ul>
+                    <li><strong>User ID:</strong> 012 395 8647</li>
+                    <li><strong>Type:</strong> Personal</li>
+                    <li><strong>Created:</strong> July 19, 2020</li>
+                    <li><strong>Valid Date:</strong> July 18, 2032</li>
+                  </ul>
+                </div>
               </div>
-              
+              <!-- end card information -->
             </div>
           </div>
         </main>
-        
       </div>
     </div>
 

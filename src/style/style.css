@@ -923,6 +923,150 @@
 .submit-button:hover {
   background-color: #0056b3;
 }
+
+.general-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.general-profile {
+  position: relative;
+  width: fit-content;
+  margin: 20px 0px;
+}
+.edit-profile-btn {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 30px;
+  height: 30px;
+}
+.general-profile-titles > h6 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.general-profile-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.general-profile-title-values {
+  margin-left: 40px;
+}
+.general-profile-title-values > p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px !important;
+  font-size: 0.8rem;
+  color: var(--p-color);
+  width: 200px;
+}
+
+.general-section-parent {
+  background-color: rgb(234, 252, 220);
+}
+
+/* password
+\ */
+.card-password {
+  border-radius: 12px;
+
+  background-color: white;
+}
+.text-password {
+  position: relative;
+  left: 27px;
+  padding-top: 15px;
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: large;
+  color: #1d3557;
+}
+.input-password {
+  display: flex;
+  flex-direction: column;
+}
+.input-password- {
+  margin: 10px 28px;
+  border-radius: 20px;
+  height: 40px;
+  /* width: 260px; */
+  border: 1px solid #717275;
+  font-size: 13px;
+}
+.button-password {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 28px;
+  margin-right: 28px;
+  padding-bottom: 12px;
+}
+.button-password- {
+  height: 50px;
+  width: 130px;
+  border: 1px solid #717275;
+  border-radius: 30px;
+  background-color: #ffff;
+  color: #717275;
+  font-size: 13px;
+}
+.button-password-- {
+  font-size: 13px;
+  height: 50px;
+  width: 130px;
+  border: 1px solid #1d3557;
+  border-radius: 30px;
+  background-color: #1d3557;
+  color: #ffff;
+}
+/*password  */
+/* start Card Information */
+.card_information {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.card_information h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  color: #1d3557;
+  font-weight: 700;
+}
+
+.card_information ul {
+  list-style: none;
+  color: #717275;
+}
+
+.card_information li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.card_information li strong {
+  color: #2d2d2d;
+  margin-right: 10px;
+}
+/* end Card Information */
+
+/* start setting  */
+.img-setting-prof{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* End setting  */
 @media (max-width: 768px) {
   .search-container {
     width: 100%;
