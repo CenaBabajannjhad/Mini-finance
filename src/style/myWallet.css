@@ -55,3 +55,32 @@ tr:nth-child(even) {
     font-size: 13px;
   }
 }
+.btns {
+  display: flex;
+  margin: 20px 35%;
+  width: 400px;
+}
+.arrow-btn {
+  border-radius: 300px;
+  background-color: #fff;
+  width: 80px;
+  height: 40px;
+  margin: 0 5px;
+}
+.btn-number {
+  border-radius: 300px;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease-in;
+}
+.btn-number:hover {
+  background-color: #00bbd495;
+  color: #fff;
+  border: none;
+}
+@media screen and (max-width: 1200px) {
+  .btns {
+    margin: 20px 25%;
+  }
+}
