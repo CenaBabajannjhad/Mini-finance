@@ -3,8 +3,8 @@
   background: #a8dadb;
   padding: 20px;
   border-radius: 8px;
-  width: 400px;
-  height: 180px;
+  width: 100%;
+  height: 210px;
   text-align: left;
   display: flex;
   flex-direction: column;
